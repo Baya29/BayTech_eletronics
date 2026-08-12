@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1999&family=Fascinate+Inline&family=Fruktur:ital@0;1&family=Lobster&family=Roboto:wdth,wght@75..100,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #F8FBFF
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+}
+
+.logo {
+    flex: 0%;
+    margin-left: 10%;
+    /* border: 1px solid red; */
+    text-align: left;
+
+
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #f5f6fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0, 3s;
+}
+
+.search:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.search i {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #666;
+}
+
+
+.logo h1 {
+    /*font-family: "Fascinate Inline", system-ui;*/
+    font-family: "Lobster", sans-serif;
+    color: #180f4a;
+    font-size: 38px;
+
+}
+
+.menu {
+    flex: 20%;
+    /* border: 1px solid black; */
+    text-align: left;
+    padding: 20px;
+}
+
+.menu a {
+    color: #180f4a;
+    text-decoration: none;
+    padding: 20px 16px;
+
+
+}
+
+.menu a:hover {
+
+    color: #0A66C2;
+    border-top: 4px solid #180f4a;
+    /*border-bottom: 4px solid #180f4a;*/
+
+}
+
+#botao {
+    background: #180f4a;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 15px;
+    margin-right: 10%;
+    margin-left: 5%;
+
+}
+
+#botao:hover {
+    border: none;
+    background: #0A66C2;
+
+
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    height: 710px;
+    /* background: gray; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid white; */
+
+
+}
+
+.headline h2 {
+    font: weight 900px;
+    font-size: 20px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    font: weight 900px;
+    font-size: 18px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
+    text-indent: 60px;
+    margin-top: 2px;
+
+}
+
+.contacto-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #180f4a;
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.contacto-btn:hover {
+    background: #0A66C2;
+}
+
+.img_headline {
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid rgb(227, 67, 27); */
+    text-align: center;
+    filter: drop-shadow(0 25px 35px rgba(0, 0, 0, .18));
+
+
+}
+
+section {
+    display: inline-block;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    /*height: 500px;*/
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 60px;
+    margin-top: -50px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+}
+
+.servicos {
+    display: inline;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 2px solid #180f4a;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover {
+    background: #180f4a;
+    color: white;
+    padding: 40px;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+.fin {
+    background-color: #180f4a;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.geral {
+    display: flex;
+    margin-left: 300px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    /* border: 1px red solid; */
+}
+
+.logo-rodape {
+    width: 300px;
+    height: 300px;
+    /* border: 1px red solid; */
+    padding: 20px;
+}
+
+.contacto {
+    font-family: "Lobster", sans-serif;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    border-radius: 50%;
+}
+
+.items {
+    padding: 5px;
+
+}
+
+.empr {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.items a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.items a:hover {
+    text-decoration: underline;
+}
+
+.direito {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px red solid; */
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+
+}
+
+.direito p {
+    text-align: center;
+}
+
+.Atendimento {
+    margin-top: 16px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.adress a {
+    text-decoration: none;
+    color: white;
+}
+
+.adress a:hover {
+    text-decoration: underline;
+}
+
+.ender a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.ender a:hover {
+    text-decoration: underline;
+}
+
+.pag {
+    margin-top: 16px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    /*  width: 150px; */
+}
